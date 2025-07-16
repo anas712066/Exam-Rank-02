@@ -3,7 +3,7 @@ int	found( char *str, char c, int limit)
 	int	i;
 
 	i = 0;
-	while (str[i] && i < limit)
+	while (str[i] && (i < limit || limit < 0))
 	{
 		if (str[i] == c)
 			return (1);
