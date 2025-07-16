@@ -24,7 +24,7 @@ int	main(int argc, char **argv)
 	i = 0;
 	while (argv[1][i])
 	{
-		if (!found(argv[1], argv[1][i], i) && !found(argv[2], argv[1][i], -1))
+		if (!found(argv[1], argv[1][i], i) && found(argv[2], argv[1][i], -1))
 			write(1, &argv[1][i], 1);
 		i++;
 	}
